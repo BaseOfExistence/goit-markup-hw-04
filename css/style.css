@@ -259,7 +259,7 @@ img{
     background-color: var(--accent);
     border-radius: 2px;
     position: absolute;
-    transform: translateY(20px);
+    transform: translateY(27px);
     left: 0;
     bottom: -1px;
     
@@ -412,4 +412,7 @@ img{
 }
 .dop-info-conteiner:hover .dop-info{
     transform: translateY(0);
+}
+.studio-color{
+    color: var(--accent);
 }
