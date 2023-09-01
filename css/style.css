@@ -242,13 +242,17 @@ img{
 }
 .nav-item{
     color: var(--accent);
+    position: relative;
 }
 .nav-item::after{
     display: block;
     content: "";
+    width: 100%;
     height: 4px;
     background-color: var(--accent);
     border-radius: 2px;
+    position: absolute;
+    transform: translateY(20px);
 }
 .hero-container{
     flex-shrink: 0;
@@ -375,4 +379,26 @@ img{
 }
 .card:hover{
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.dop-info-conteiner{
+    position: relative;
+    overflow: hidden;
+}
+.dop-info{
+    position: absolute;
+    background-color: var(--target);
+    color: var(--bg);
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    padding: 40px 32px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms ease-in-out;
+}
+.dop-info-conteiner:hover .dop-info{
+    transform: translateY(0);
 }
